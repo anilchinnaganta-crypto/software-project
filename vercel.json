@@ -1,33 +1,14 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "services": {
-    "app": {
-      "root": ".",
-      "framework": "tanstack-start"
-    },
-    "studio": {
-      "root": "studio",
-      "framework": "sanity"
-    }
-  },
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/client",
   "rewrites": [
     {
-      "source": "/studio",
-      "destination": {
-        "service": "studio"
-      }
-    },
-    {
-      "source": "/studio/(.*)",
-      "destination": {
-        "service": "studio"
-      }
+      "source": "/assets/(.*)",
+      "destination": "/assets/$1"
     },
     {
       "source": "/(.*)",
-      "destination": {
-        "service": "app"
-      }
+      "destination": "/api/index"
     }
   ]
 }

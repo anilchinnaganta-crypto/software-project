@@ -35,7 +35,6 @@ export const LEADERSHIP_IMAGES = {
   principal: principalImage,
 } as const;
 
-
 export const BRANDING_IMAGE = logoNewRidge;
 export const META_IMAGE = campusBuilding;
 
@@ -82,8 +81,6 @@ export const ABOUT_IMAGES = {
   community: achievementsGroup,
 } as const;
 
-
-
 export const CONTACT_IMAGE = {
   campus: campusBuilding,
 } as const;
@@ -94,4 +91,46 @@ export const ADMISSIONS_IMAGES = {
   formation: achievementsGroup,
 } as const;
 
-
+export const GALLERY_CATEGORIES = [
+  {
+    title: "Campus & Classrooms",
+    description: "Learning spaces and facilities across the school.",
+    items: [
+      { src: campusEnvironment, title: "School campus" },
+      { src: classroomActivity1, title: "Classroom learning" },
+      { src: campusActivity2, title: "Student activities" },
+      { src: scienceLab, title: "Science learning" },
+      { src: greenCampus, title: "Campus grounds" },
+    ],
+  },
+  {
+    title: "Student Activities",
+    description: "Students learning, playing and growing together.",
+    items: [
+      { src: academicActivity, title: "Academic activities" },
+      { src: karate1, title: "Karate practice" },
+      { src: karate2, title: "Karate practice" },
+      { src: prePrimary1, title: "Pre-primary activities" },
+      { src: prePrimary2, title: "Pre-primary activities" },
+      { src: prePrimaryPlay, title: "Creative play" },
+    ],
+  },
+  {
+    title: "Events & Celebrations",
+    description: "School celebrations and special moments from campus life.",
+    items: [
+      { src: culturalDance1, title: "Cultural celebration" },
+      { src: festival1, title: "School celebration" },
+      { src: achievementsGroup, title: "Student achievements" },
+      { src: festival2, title: "School celebration" },
+      { src: festival3, title: "School celebration" },
+      { src: culturalDance2, title: "Cultural celebration" },
+      { src: culturalDance3, title: "Cultural celebration" },
+      { src: annualEnhanced1, title: "Annual day" },
+      { src: annualEnhanced2, title: "Annual day" },
+      { src: annualEnhanced3, title: "Annual day" },
+      { src: annualEnhanced4, title: "Annual day" },
+      { src: prePrimary3, title: "Student activities" },
+    ],
+  },
+] as const;
