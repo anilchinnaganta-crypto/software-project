@@ -6,6 +6,7 @@ import {schemaTypes} from './schemaTypes'
 export default defineConfig({
   name: 'default',
   title: 'new ridge school',
+  basePath: '/studio',
 
   projectId: '6vvcz1yp',
   dataset: 'production',
