@@ -36,9 +36,7 @@ export function Gallery() {
                   <p className="text-sm text-slate-600 max-w-2xl">{category.description}</p>
                 )}
               </div>
-              <div
-                className={`grid gap-3 sm:grid-cols-2 ${category.items.length === 4 ? "lg:grid-cols-4" : category.items.length === 2 ? "lg:grid-cols-2" : "lg:grid-cols-3"} auto-rows-[190px]`}
-              >
+              <div className="grid gap-3 auto-rows-[190px] sm:grid-cols-2 lg:grid-cols-3">
                 {category.items.map((item, idx) => (
                   <motion.button
                     key={`${category.title}-${idx}`}
